@@ -8,7 +8,7 @@ const main = document.getElementsByTagName("main")[0];
 
 input_search.addEventListener("input", () => {
     if (input_search.value == "") return;
-    if (/^[ضصثقفغعهخحجچشسیبلاتنمکگظطزرذدپو.]/.test(input_search.values))
+    if (/^[ضصثقفغعهخحجچشسیبلاتنمکگظطزرذدپو.]/.test(input_search.value))
         document.body.className = "direction_rtl"
     else
         document.body.className = "direction_ltr"
