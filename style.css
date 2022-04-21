@@ -100,3 +100,10 @@ section .definition,section .type,section .phonetic,section .word{
     color:#151515;
     margin:0;
 }
+
+.direction_rtl{
+    direction:rtl;
+}
+.direction_ltr{
+    direction:ltr;
+}
