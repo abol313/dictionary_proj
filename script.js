@@ -5,6 +5,14 @@
 const input_search = document.getElementById("input_search");
 const main = document.getElementsByTagName("main")[0];
 
+
+input_search.addEventListener("input",()=>{
+    if(/^[ضصثقفغعهخحجچشسیبلاتنمکگظطزرذدپو.]/.test(input_search.values))
+        document.body.className = "direction_rtl"
+    else
+        document.body.className = "direction_ltr"
+})
+
 input_search.addEventListener("keyup",ev=>{
     if(ev.key == "Enter" && input_search.value.length>0)
         search(input_search.value);
