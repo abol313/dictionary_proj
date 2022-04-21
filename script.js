@@ -9,9 +9,9 @@ const main = document.getElementsByTagName("main")[0];
 input_search.addEventListener("input", () => {
     if (input_search.value == "") return;
     if (/^[ضصثقفغعهخحجچشسیبلاتنمکگظطزرذدپو.]/.test(input_search.value))
-        document.body.className = "direction_rtl"
+        document.body.setAttribute("class", "direction_rtl")
     else
-        document.body.className = "direction_ltr"
+        document.body.setAttribute("class", "direction_ltr")
 })
 
 input_search.addEventListener("keyup", ev => {
