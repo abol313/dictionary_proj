@@ -8,10 +8,13 @@ const main = document.getElementsByTagName("main")[0];
 
 input_search.addEventListener("input", () => {
     if (input_search.value == "") return;
-    if (/^[ضصثقفغعهخحجچشسیبلاتنمکگظطزرذدپو.]/.test(input_search.value))
+    if (/^[ضصثقفغعهخحجچشسیبلاتنمکگظطزرذدپو.]/.test(input_search.value)) {
+        input_search.setAttribute("placeholder","بزن کلمه، بزن اینتر")
         document.body.setAttribute("class", "direction_rtl")
-    else
+    } else {
+        input_search.setAttribute("placeholder","pass word, pass enter")
         document.body.setAttribute("class", "direction_ltr")
+    }
 })
 
 input_search.addEventListener("keyup", ev => {
