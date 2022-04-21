@@ -7,6 +7,7 @@ const main = document.getElementsByTagName("main")[0];
 
 
 input_search.addEventListener("input",()=>{
+    if(input_search.value=="")return;
     if(/^[ضصثقفغعهخحجچشسیبلاتنمکگظطزرذدپو.]/.test(input_search.values))
         document.body.className = "direction_rtl"
     else
