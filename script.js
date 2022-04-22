@@ -10,10 +10,12 @@ input_search.addEventListener("input", () => {
     if (input_search.value == "") return;
     if (/^[ضصثقفغعهخحجچشسیبلاتنمکگظطزرذدپو.]/.test(input_search.value)) {
         input_search.setAttribute("placeholder","بزن کلمه، بزن اینتر")
-        document.body.setAttribute("class", "direction_rtl")
+        document.body.style.setProperty("--glob-direction", "rtl")
+        document.body.style.setProperty("--glob-font-family", "tanha , sans-serif")
     } else {
         input_search.setAttribute("placeholder","pass word, pass enter")
-        document.body.setAttribute("class", "direction_ltr")
+        document.body.style.setProperty("--glob-direction", "ltr")
+        document.body .style.setProperty("--glob-font-family", "'Varela Round',cursive")
     }
 })
 

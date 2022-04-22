@@ -6,8 +6,8 @@
 
 @font-face{
     font-family:tanha;
-    src:url(fonts/Tanha.eot) format("embedded-opentype"),
-        url(fonts/Tanha.ttf) format("truetype"),
+    src:url(fonts/Tanha.ttf) format("truetype"),
+        url(fonts/Tanha.eot) format("embedded-opentype"),
         url(fonts/Tanha.woff2) format("woff2"),
         url(fonts/Tanha.woff) format("woff");
 }
@@ -109,11 +109,12 @@ section .definition,section .type,section .phonetic,section .word{
     margin:0;
 }
 
-.direction_rtl{
-    direction:rtl;
-    font-family:tanha,sans-serif;
+html{
+    --glob-direction: ltr !important;
+    --glob-font-family: 'Varela Round' , cursive !important;
 }
-.direction_ltr{
-    direction:ltr;
-    font-family:'Varela Round',cursive;
+
+*{
+    direction: var(--glob-direction) !important;
+    font-family: var(--glob-font-family) !important;
 }
