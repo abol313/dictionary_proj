@@ -4,6 +4,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
+@font-face{
+    font-family:tanha;
+    src:url(fonts/Tanha.eot) format("embedded-opentype"),
+        url(fonts/Tanha.ttf) format("truetype"),
+        url(fonts/Tanha.woff2) format("woff2"),
+        url(fonts/Tanha.woff) format("woff");
+}
+
 body{
     display:flex;
     flex-direction:column;
@@ -103,7 +111,9 @@ section .definition,section .type,section .phonetic,section .word{
 
 .direction_rtl{
     direction:rtl;
+    font-family:tanha,sans-serif;
 }
 .direction_ltr{
     direction:ltr;
+    font-family:'Varela Round',cursive;
 }
